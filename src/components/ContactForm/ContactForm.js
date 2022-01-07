@@ -68,8 +68,6 @@ import styles from './ContactForm.module.css';
 const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState (''); 
   const [number, setNumber] = useState ('')
-
-  // const nameInputId = nanoid();
   const handleChange = e => {
    if (e.currentTarget.name === 'name') setName(e.currentTarget.value);
    if (e.currentTarget.name === 'number') setNumber(e.currentTarget.value); 
@@ -78,7 +76,7 @@ const ContactForm = ({ onSubmit }) => {
         e.preventDefault();
         onSubmit({
           name: name,
-          namber: number,
+          number: number,
         });
         setName('');
         setNumber('');

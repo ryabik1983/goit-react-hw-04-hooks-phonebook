@@ -122,12 +122,7 @@ import './App.css';
 
 function App () {
 const [filter, setFilter] = useState ('');
-const [contacts, setContacts] = useLocalStorage('contacts', [
-  // { id: 'id-1', name: 'Vova Putin', number: '459-12-56' },
-  // { id: 'id-2', name: 'Vitya Poroshenko', number: '443-89-12' },
-  // { id: 'id-3', name: 'Vova Lenin', number: '645-17-79' },
-  // { id: 'id-4', name: 'Joseph Stalin', number: '227-91-26' },
-]);
+const [contacts, setContacts] = useLocalStorage('contacts', []);
 
 const formSubmitData = ({ name, number }) => {
   const newItem = { id: nanoid(), name: name, number: number };
