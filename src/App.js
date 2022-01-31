@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from './components/ContactForm/ContactForm';
 import Filter from './components/Filter/Filter';
 import ContactsList from './components/ContactList/ContactList';
-import useLocalStorage from './components/uselocalstorage/uselocalstorage';
+import useLocalStorage from './components/hooks/uselocalstorage';
 // import Modal from './components/Modal/Modal';
 import './App.css';
 
